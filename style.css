@@ -1,0 +1,94 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/22/10/13/retro-3249927_960_720.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+h1{
+    font-size: 2.2rem;
+    line-height: 10px;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+.heading{
+    font-family: 'Montserrat';
+    position: relative;
+    font-size: 4rem;
+}
+
+#p5{
+    color: white;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.section-full{
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.section-three{
+    display: flex;
+    padding: 30px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.item-two:first-child{
+    margin-right: 60px;
+}
+
+.item-three:first-child{
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+.item-three:nth-child(3){
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.section-two{
+    display: flex;
+    max-width: 100%;
+    margin: 30px;
+}
+
+.item-two{
+    background-color: white;
+    width: 50%;
+    padding: 60px;
+}
+
+.item-three{
+    height: 400px;
+    width: 33%;
+    padding: 60px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
