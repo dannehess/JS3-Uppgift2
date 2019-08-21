@@ -1,14 +1,60 @@
-body{
-    background-image: url('https://cdn.pixabay.com/photo/2018/03/22/10/13/retro-3249927_960_720.jpg');
-    background-size: cover;
-    background-position: center;
+body, html{
     font-family: 'Montserrat';
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    overflow-X: hidden;
+    color: #1a1a1d;
+}
+
+.container{
+    margin-bottom: 30px;
+}
+
+.container, .section-full, .section-two, .section-three{
+    display: grid;
+}
+
+.section-two, .section-three{
+    grid-gap: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.section-full{
+    grid-template-columns: 1fr;
+}
+
+.section-full>.item{
+    background-image: url('https://img.freepik.com/free-photo/cement-wall-floor-copy-space_53876-30237.jpg?size=626&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.section-two{
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-three{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+    width: 100%;
+    padding: 30px;
+    background-color: white;
 }
 
 *{
     box-sizing: border-box;
+}
+
+.black-bg{
+    background-color: #1a1a1d;
+    color: white;
+    padding: 2px 10px;
 }
 
 p{
@@ -16,79 +62,81 @@ p{
 }
 
 h1{
-    font-size: 2.2rem;
-    line-height: 10px;
+    font-size: 2.4rem;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 h4{
     font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .heading{
-    font-family: 'Montserrat';
-    position: relative;
     font-size: 4rem;
+    top: 200px;
 }
 
-#p5{
-    color: white;
+.heading, .heading-two{
+    position: absolute;
+    left: 200px;
 }
 
-.wrapper{
-    width: 100%;
+.heading-two{
+    font-size: 3rem;
+    top: 250px;
 }
 
-.section-full{
-    width: 100%;
-    background-color: yellow;
-    display: flex;
+.fakeimg{
+    display: grid;
     justify-content: center;
-}
-
-.section-three{
-    display: flex;
-    padding: 30px;
-    padding-right: 10px;
+    align-content: center;
     width: 100%;
+    height: 300px;
+    background-color: rgb(236, 240, 241);
+    border: 1px solid black;
 }
 
-.item-two:first-child{
-    margin-right: 60px;
+#iphone{
+    height: 500px;
+    position: absolute;
+    right: -440px;
+    top: 100px;
 }
 
-.item-three:first-child{
-    margin-right: 60px;
-    margin-left: 20px;
-}
+.section-invisible {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  
+  .section-visible {
+    opacity: 1;
+  }
 
-.item-three:nth-child(3){
-    margin-left: 60px;
-    margin-right: 40px;
-}
+  body, .section-full, .section-two, .section-three{
+    background-color: #fff;
+  }
 
-.section-two{
-    display: flex;
-    max-width: 100%;
-    margin: 30px;
-}
+  .apple-pic{
+      width: 100%;
+      border: 1px solid #1a1a1d;
+  }
 
-.item-two{
-    background-color: white;
-    width: 50%;
-    padding: 60px;
-}
+  .apple-box{
+      width: auto;
+  }
 
-.item-three{
-    height: 400px;
-    width: 33%;
-    padding: 60px;
-    background-color: white;
-    border: 2px solid black;
-}
+  .item{
+      background-color: rgb(241, 239, 239);
+  }
 
-.centered{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
+
+  /* MENY START */
+
+  nav{
+      width: 100%;
+      background-color: #1a1a1d;
+  }
+
+  /* MENY END */
