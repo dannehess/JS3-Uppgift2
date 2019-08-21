@@ -5,10 +5,7 @@ body, html{
     max-width: 100vw;
     overflow-X: hidden;
     color: #1a1a1d;
-}
-
-.container{
-    margin-bottom: 30px;
+    scroll-behavior: smooth;
 }
 
 .container, .section-full, .section-two, .section-three{
@@ -26,11 +23,11 @@ body, html{
     grid-template-columns: 1fr;
 }
 
-.section-full>.item{
+.top-section>.item{
     background-image: url('https://img.freepik.com/free-photo/cement-wall-floor-copy-space_53876-30237.jpg?size=626&ext=jpg');
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 695px;
 }
 
 .section-two{
@@ -102,7 +99,7 @@ h4{
     height: 500px;
     position: absolute;
     right: -440px;
-    top: 100px;
+    top: 120px;
 }
 
 .section-invisible {
@@ -114,7 +111,7 @@ h4{
     opacity: 1;
   }
 
-  body, .section-full, .section-two, .section-three{
+  body, .section-two, .section-three{
     background-color: #fff;
   }
 
@@ -134,9 +131,69 @@ h4{
 
   /* MENY START */
 
+  #appleicon-white{
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #1a1a1d;
+    margin-left: 160px;
+  }
+
+  header{
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    padding: 1px;
+    background-color: #1a1a1d;
+    justify-content: flex-end; 
+    position: fixed;
+  }
+
   nav{
-      width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 160px;
+    margin-top: 1px;
+    background-color: #1a1a1d;
+  }
+
+  .navlink{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; 
       background-color: #1a1a1d;
+      padding: 10px 20px;
+      margin-left: 20px;
+      font-family: 'Montserrat';
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+  }
+
+  .navlink:hover{
+      color: darkgrey;
+  }
+
+  .navlink:first-child{
+      margin-left: 0;
   }
 
   /* MENY END */
+
+  #back-to-top{
+      width: 30px;
+      height: 30px;
+      background-color: #1a1a1d;
+      color: white;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+  }
+
+  #back-to-top>img{
+    width: 12px;
+  }
