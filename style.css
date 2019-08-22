@@ -1,242 +1,336 @@
-body, html{
-    font-family: 'Montserrat';
-    margin: 0;
-    padding: 0;
-    max-width: 100vw;
-    overflow-X: hidden;
-    color: #1a1a1d;
-    scroll-behavior: smooth;
+body,
+html {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: #1a1a1d;
+  scroll-behavior: smooth;
 }
 
-.container, .section-full, .section-two, .section-three{
-    display: grid;
+.container,
+.section-full,
+.section-two,
+.section-three {
+  display: grid;
 }
 
-.section-two, .section-three{
-    grid-gap: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-left: 30px;
+.section-two,
+.section-three {
+  grid-gap: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
-.section-full{
-    grid-template-columns: 1fr;
+.section-full {
+  grid-template-columns: 1fr;
 }
 
-.top-section>.item{
-    background-image: url('img/top-section-bg.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.top-section > .item {
+  background-image: url("img/top-section-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 450vh;
+  
 }
 
-.section-two{
-    grid-template-columns: 1fr 1fr;
+.section-two {
+  grid-template-columns: 1fr 1fr;
 }
 
-.section-three{
-    grid-template-columns: 1fr 1fr 1fr;
+.section-three {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.item{
-    width: 100%;
-    padding: 30px;
-    background-color: white;
+.item {
+  width: 100%;
+  /* padding: 30px; */
+  background-color: white;
+  
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.black-bg{
-    background-color: #1a1a1d;
-    color: white;
-    padding: 2px 10px;
+.black-bg {
+  background-color: #1a1a1d;
+  color: white;
+  padding: 2px 10px;
 }
 
-p{
-    font-size: 1.3rem;
+p {
+  font-size: 1.3rem;
 }
 
-h1{
-    font-size: 2.4rem;
-    margin-top: 10px;
-    margin-bottom: 0;
+h1 {
+  font-size: 2.4rem;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
-h4{
-    font-size: 1.8rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
+h4 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.heading{
-    font-size: 4rem;
-    top: 200px;
+.heading {
+  font-size: 4rem;
+  top: 200px;
 }
 
-.heading, .heading-two{
-    position: absolute;
+.heading,
+.heading-two {
+  position: absolute;
 }
 
-.heading{
-    left: 200px;
+.heading {
+  left: 200px;
 }
 
-.heading-two{
-    font-size: 3rem;
-    top: 250px;
-    left: 194px;
+.heading-two {
+  font-size: 3rem;
+  top: 250px;
+  left: 194px;
 }
 
-.fakeimg{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(236, 240, 241);
-    border: 1px solid black;
+.fakeimg {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(236, 240, 241);
+  border: 1px solid black;
 }
 
-#iphone{
+#iphone {
+  height: 500px;
+  position: absolute;
+  right: -440px;
+  top: 120px;
+}
+
+body,
+.section-two,
+.section-three {
+  background-color: #fff;
+}
+
+.apple-pic {
+  width: 100%;
+  border: 1px solid #1a1a1d;
+}
+
+.apple-box {
+  width: auto;
+}
+
+.item {
+  background-color: rgb(241, 239, 239);
+}
+
+/* MENY START */
+
+#appleicon-white {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #1a1a1d;
+  margin-left: 160px;
+}
+
+header {
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  padding: 1px;
+  background-color: #1a1a1d;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 160px;
+  margin-top: 1px;
+  background-color: #1a1a1d;
+}
+
+.navlink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #1a1a1d;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navlink:hover {
+  color: darkgrey;
+}
+
+.navlink:first-child {
+  margin-left: 0;
+}
+
+/* MENY END */
+
+/* BACK-TO-TOP START */
+
+#back-to-top {
+  width: 40px;
+  height: 40px;
+  background-color: #1a1a1d;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+#back-to-top:hover {
+  transform: scale(1.1);
+}
+
+#back-to-top > img {
+  width: 16px;
+}
+
+/* BACK-TO-TOP END */
+
+#buy {
+  position: relative;
+}
+
+#buy-button {
+  position: absolute;
+  top: 360px;
+  left: 504px;
+  background-color: #1a1a1d;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#buy-button:hover {
+  box-shadow: 4px 4px 6px #303033;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#price {
+  position: relative;
+  background-color: rgb(242, 35, 35);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  top: 370px;
+  left: 266px;
+  z-index: 111;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 6px 8px;
+  color: white;
+}
+
+/* SECTION TWO START */
+
+
+
+.section-two-p {
+  font-size: 5em;
+  font-weight: bold;
+  width: 70%;
+  position: absolute;
+  top: 800px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: block;
+}
+
+#iphone-family {
     height: 500px;
     position: absolute;
-    right: -440px;
-    top: 120px;
+    right: 40px;
+    top: 1200px;
+  }
+
+
+.header-section-two {
+  opacity: 0.1;
+  transition: all 1.2s ease-out;
 }
 
-  body, .section-two, .section-three{
-    background-color: #fff;
-  }
+.header-visible-section-two {
+  opacity: 1;
+  transform: translateX(0);
+}
 
-  .apple-pic{
-      width: 100%;
-      border: 1px solid #1a1a1d;
-  }
-
-  .apple-box{
-      width: auto;
-  }
-
-  .item{
-      background-color: rgb(241, 239, 239);
-  }
+.header-section-two-image {
+  opacity: 0.9;
+  transform: translateX(-600px);
+  transition: all 2s ease-out;
+}
 
 
-  /* MENY START */
+.header-visible-section-two-image {
+  opacity: 1;
+  transform: translateX(0);
+}
 
-  #appleicon-white{
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: #1a1a1d;
-    margin-left: 160px;
-  }
-
-  header{
-    z-index: 999;
-    display: flex;
-    width: 100%;
-    padding: 1px;
-    background-color: #1a1a1d;
-    justify-content: flex-end; 
-    position: fixed;
-  }
-
-  nav{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-right: 160px;
-    margin-top: 1px;
-    background-color: #1a1a1d;
-  }
-
-  .navlink{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end; 
-      background-color: #1a1a1d;
-      padding: 10px 20px;
-      margin-left: 20px;
-      font-family: 'Montserrat';
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: white;
-  }
-
-  .navlink:hover{
-      color: darkgrey;
-  }
-
-  .navlink:first-child{
-      margin-left: 0;
-  }
-
-  /* MENY END */
-
-  /* BACK-TO-TOP START */ 
-
-  #back-to-top{
-      width: 40px;
-      height: 40px;
-      background-color: #1a1a1d;
-      color: white;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      border-radius: 40px;
-      transition: all .2s ease-in-out;
-  }
-
-  #back-to-top:hover{
-    transform: scale(1.1);
-  }
-
-  #back-to-top>img{
-    width: 16px;
-  }
-
-  /* BACK-TO-TOP END */ 
-
-  #buy{
-      position: relative;
-  }
-
-  #buy-button{
+.heading-section-two-1 {
+    font-size: 2.5em;
+    top: 1370px;
+    left: 230px;
     position: absolute;
-    top: 360px;
-    left: 504px;
-    background-color: #1a1a1d;
-    padding: 10px 40px;
-    color: white;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    font-size: 1.2rem;
-    transition: all .2s ease-in-out;
-}
+    
+  }
+.heading-section-two-2 {
+    font-size: 2.5em;
+    top: 1420px;
+    left: 230px;
+    position: absolute;
+  }
+.heading-section-two-3 {
+    font-size: 2.5em;
+    top: 1470px;
+    left: 230px;
+    position: absolute;
+  }
 
-#buy-button:hover{
-    box-shadow: 4px 4px 6px #303033;
-    transform: scale(1.1);
-    cursor: pointer;
-}
+  #middle{
+      position: absolute;
+      top: 1120px;
+  }
+  #bottom{
+      position: absolute;
+      top: 2120px;
+  }
 
-#price{
-    position: relative;
-    background-color: rgb(242, 35, 35);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -10px;
-    top: 370px;
-    left: 266px;
-    z-index: 111;
-    font-size: 1.2rem;
-    font-style: italic;
-    padding: 6px 8px;
-    color: white;
-}
+  footer{
+      background-color: #1a1a1d;
+      top: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 1rem;
+      
+  }
+  
