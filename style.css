@@ -140,3 +140,15 @@ h4{
   }
 
   /* MENY END */
+
+
+
+  /* SECTION TWO START */
+
+
+  #iphone-family{
+    height: 500px;
+    position: absolute;
+    /* right: -440px; */
+    top: 1000px;
+}
