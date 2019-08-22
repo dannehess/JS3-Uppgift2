@@ -24,10 +24,10 @@ body, html{
 }
 
 .top-section>.item{
-    background-image: url('https://img.freepik.com/free-photo/cement-wall-floor-copy-space_53876-30237.jpg?size=626&ext=jpg');
+    background-image: url('img/top-section-bg.jpeg');
     background-size: cover;
     background-position: center;
-    height: 695px;
+    height: 100vh;
 }
 
 .section-two{
@@ -77,12 +77,16 @@ h4{
 
 .heading, .heading-two{
     position: absolute;
+}
+
+.heading{
     left: 200px;
 }
 
 .heading-two{
     font-size: 3rem;
     top: 250px;
+    left: 194px;
 }
 
 .fakeimg{
@@ -101,15 +105,6 @@ h4{
     right: -440px;
     top: 120px;
 }
-
-.section-invisible {
-    opacity: 0;
-    transition: all 1s ease-in-out;
-  }
-  
-  .section-visible {
-    opacity: 1;
-  }
 
   body, .section-two, .section-three{
     background-color: #fff;
@@ -139,7 +134,7 @@ h4{
   }
 
   header{
-    z-index: 99;
+    z-index: 999;
     display: flex;
     width: 100%;
     padding: 1px;
@@ -180,20 +175,68 @@ h4{
 
   /* MENY END */
 
+  /* BACK-TO-TOP START */ 
+
   #back-to-top{
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       background-color: #1a1a1d;
       color: white;
       position: fixed;
       bottom: 20px;
       right: 20px;
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
-      border-radius: 4px;
+      border-radius: 40px;
+      transition: all .2s ease-in-out;
+  }
+
+  #back-to-top:hover{
+    transform: scale(1.1);
   }
 
   #back-to-top>img{
-    width: 12px;
+    width: 16px;
   }
+
+  /* BACK-TO-TOP END */ 
+
+  #buy{
+      position: relative;
+  }
+
+  #buy-button{
+    position: absolute;
+    top: 360px;
+    left: 504px;
+    background-color: #1a1a1d;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+}
+
+#buy-button:hover{
+    box-shadow: 4px 4px 6px #303033;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#price{
+    position: relative;
+    background-color: rgb(242, 35, 35);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    top: 370px;
+    left: 266px;
+    z-index: 111;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 6px 8px;
+    color: white;
+}

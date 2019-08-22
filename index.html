@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv-SE">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>&copy; Apple</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<title>&copy; Apple</title>
 </head>
+
 <body>
 
-    <div class="container">
-            <header>
-                    <div id="appleicon-white"><img src="img/appleicon-white.png"></div>
-                <nav>
-                    <a href="#" class="navlink">Top</a>
-                    <a href="#" class="navlink">Middle</a>
-                    <a href="#" class="navlink">Bottom</a>
-                </nav>
-                </header>
-        <div class="section-full top-section"><div class="item">
-                <h1 class="heading">Apple Iphone X</h1>
-                <h2 class="heading-two">Greatest of them <span class="black-bg">all.</span></h2>
-                <img src="img/iphone.png" id="iphone">
+<div class="container">
+    <header>
+        <div id="appleicon-white"><a href="#"><img src="img/appleicon-white.png" alt="apple-icon"></a></div>
+        <nav>
+            <a href="#" class="navlink">Top</a>
+            <a href="#" class="navlink">Middle</a>
+            <a href="#" class="navlink">Bottom</a>
+        </nav>
+    </header>
+    <div class="section-full top-section">
+        <div class="item">
+            <h1 class="heading">Apple Iphone X</h1>
+            <h2 class="heading-two">Greatest of them <span class="black-bg">all.</span></h2>
+            <img src="img/iphone.png" id="iphone" alt="iphone">
+            <div id="buy">
+                <span id="price">Special offer! $999</span>
+                <button id="buy-button">Buy now!</button>
+            </div>
         </div>
     </div>
-    <a href="#"><div id="back-to-top"><img src="img/back-to-top.png"></div></a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="animation.js"></script>
+</div>
+<a href="#">
+    <div id="back-to-top"><img src="img/back-to-top.png" alt="back-to-top"></div>
+</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
