@@ -50,7 +50,6 @@ window.addEventListener("scroll", () => {
 
 /* SECTION TWO START */
 
-
 /* <p> TAG Brilliant. In every way. START */
 
 function checkForVisibility() {
@@ -80,48 +79,51 @@ if (window.addEventListener) {
   addEventListener("scroll", checkForVisibility, false);
 }
 
-
-
 /* <p> TAG Brilliant. In every way. END */
-
-
-
 
 /* IPHONE IMAGES WITH TEXT START */
 
-var animateHeadersIn = 
-anime({
+var animateHeadersIn = anime({
   targets:
     ".heading-section-two-1, .heading-section-two-2, .heading-section-two-3",
-  opacity: [1, 0],
+  opacity: [0, 1],
   duration: 8000,
-  delay: 500,
-  offset: 0
+  offset: 0,
+  delay: function(el, i, l) {
+    return i * 1000;
+  }
 });
-  
-animateHeadersIn.pause()
+
+animateHeadersIn.pause();
+
+function checkForVisibilityText() {
+  var text = document.querySelectorAll(".hide");
+  text.forEach(function(tx) {
+    if (isElementInViewport(tx)) {
+      tx.classList.add("show");
+      }
+
+  })};
 
 function checkForVisibilityImage() {
   var image = document.querySelectorAll(".header-section-two-image");
   image.forEach(function(img) {
     if (isElementInViewport(img)) {
       img.classList.add("header-visible-section-two-image");
-      if (animateHeadersIn.paused && !animateHeadersIn.completed) animateHeadersIn.play()
-      
+      if (animateHeadersIn.paused && !animateHeadersIn.completed)
+        animateHeadersIn.play();
     } else {
+      animateHeadersIn.play();
+      animateHeadersIn.pause();
       img.classList.remove("header-visible-section-two-image");
       anime({
         targets:
           ".heading-section-two-1, .heading-section-two-2, .heading-section-two-3",
-        opacity: [0, 1],
+        opacity: 0,
         duration: 8000,
-        offset: 0,
-        delay: function(el, i, l) {
-          return i * 1000;
-        }
+        delay: 500,
+        offset: 0
       });
-      
-      
     }
   });
 }
@@ -142,6 +144,61 @@ if (window.addEventListener) {
   addEventListener("scroll", checkForVisibilityImage, false);
 }
 
-
 /* IPHONE IMAGES WITH TEXT END */
 
+document.addEventListener("DOMContentLoaded", () => {
+  anime
+    .timeline({ loop: true })
+    .add({
+      targets: ".bigtext",
+
+      translateX: [-300, 0],
+      scale: [0.0, 1],
+      duration: 700,
+      easing: "easeOutExpo"
+    })
+    .add({
+      targets: ".text1",
+      translateX: [-200, 0],
+      scale: [0.0, 1],
+      duration: 700,
+      easing: "easeOutExpo"
+    })
+    .add({
+      targets: ".text2",
+      translateX: [-200, 0],
+      scale: [0.0, 1],
+      duration: 700,
+      easing: "easeOutExpo"
+    })
+    .add({
+      targets: ".text3",
+      translateX: [-200, 0],
+      scale: [0.0, 1],
+      duration: 700,
+      easing: "easeOutExpo"
+    })
+    .add({
+      targets: ".text4",
+      translateX: [-200, 0],
+      scale: [0.0, 1],
+      duration: 700,
+      easing: "easeOutExpo"
+    })
+    .add({
+      targets: ".text6",
+      translateX: [-200, 0],
+      scale: [0.0, 1],
+      duration: 700,
+      easing: "easeOutExpo"
+    })
+    .add({
+      targets: ".text6,.text4,.text3,.text2,.text1,.bigtext",
+      opacity: 0,
+      easing: "linear",
+      delay: 3000
+    })
+    .add({
+      duration: 100
+    });
+});

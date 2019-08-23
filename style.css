@@ -32,8 +32,7 @@ html {
   background-image: url("img/top-section-bg.jpeg");
   background-size: cover;
   background-position: center;
-  height: 450vh;
-  
+  height: 400vh;
 }
 
 .section-two {
@@ -48,7 +47,6 @@ html {
   width: 100%;
   /* padding: 30px; */
   background-color: white;
-  
 }
 
 * {
@@ -252,8 +250,6 @@ nav {
 
 /* SECTION TWO START */
 
-
-
 .section-two-p {
   font-size: 5em;
   font-weight: bold;
@@ -267,12 +263,11 @@ nav {
 }
 
 #iphone-family {
-    height: 500px;
-    position: absolute;
-    right: 40px;
-    top: 1200px;
-  }
-
+  height: 500px;
+  position: absolute;
+  right: 40px;
+  top: 1200px;
+}
 
 .header-section-two {
   opacity: 0.1;
@@ -290,47 +285,109 @@ nav {
   transition: all 2s ease-out;
 }
 
-
 .header-visible-section-two-image {
   opacity: 1;
   transform: translateX(0);
 }
 
 .heading-section-two-1 {
-    font-size: 2.5em;
-    top: 1370px;
-    left: 230px;
-    position: absolute;
-    
-  }
+  font-size: 2.5em;
+  top: 1370px;
+  left: 230px;
+  position: absolute;
+}
 .heading-section-two-2 {
-    font-size: 2.5em;
-    top: 1420px;
-    left: 230px;
-    position: absolute;
-  }
+  font-size: 2.5em;
+  top: 1420px;
+  left: 230px;
+  position: absolute;
+}
 .heading-section-two-3 {
-    font-size: 2.5em;
-    top: 1470px;
-    left: 230px;
-    position: absolute;
-  }
+  font-size: 2.5em;
+  top: 1470px;
+  left: 230px;
+  position: absolute;
+}
 
-  #middle{
-      position: absolute;
-      top: 1120px;
-  }
-  #bottom{
-      position: absolute;
-      top: 2120px;
-  }
+/* .hide{
+  display: none;
+}
 
-  footer{
-      background-color: #1a1a1d;
-      top: 100%;
-      color: #fff;
-      text-align: center;
-      font-size: 1rem;
-      
+.show{
+  display: block;
+} */
+
+
+
+/* Pelles sektion */
+
+.infosection {
+  max-width: 800px;
+  /* margin: 100px; */
+  /* display: flex; */
+  flex-direction: column;
+}
+.text-wrapper {
+  /* margin: 1rem 1rem;
+    padding: 1px;
+    width: 100%;
+    max-width: 500px;   
+    position: sticky;
+    top: 1rem; */
+}
+/* .infosection:first-child {
+    margin-top: 30vh;
+  } */
+
+.bigtex {
+  font-size: 2.5em;
+}
+
+.infocontainer {
+  /* background-image: url("img/top-section-bg.jpeg"); */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 2020px;
+  left: 50px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+strong {
+  position: relative;
+  font-size: 1em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(70deg, #fff, #d4af37, #fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 2.2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
   }
-  
+  100% {
+    background-position: 500%;
+  }
+}
+
+#middle {
+  position: absolute;
+  top: 1120px;
+}
+#bottom {
+  position: absolute;
+  top: 1820px;
+}
+
+footer {
+  background-color: #1a1a1d;
+  top: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
