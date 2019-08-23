@@ -89,11 +89,27 @@ if (window.addEventListener) {
 
 /* IPHONE IMAGES WITH TEXT START */
 
+var animateHeadersIn = 
+anime({
+  targets:
+    ".heading-section-two-1, .heading-section-two-2, .heading-section-two-3",
+  opacity: [1, 0],
+  duration: 8000,
+  delay: 500,
+  offset: 0
+});
+  
+animateHeadersIn.pause()
+
 function checkForVisibilityImage() {
   var image = document.querySelectorAll(".header-section-two-image");
   image.forEach(function(img) {
     if (isElementInViewport(img)) {
       img.classList.add("header-visible-section-two-image");
+      if (animateHeadersIn.paused && !animateHeadersIn.completed) animateHeadersIn.play()
+      
+    } else {
+      img.classList.remove("header-visible-section-two-image");
       anime({
         targets:
           ".heading-section-two-1, .heading-section-two-2, .heading-section-two-3",
@@ -104,16 +120,8 @@ function checkForVisibilityImage() {
           return i * 1000;
         }
       });
-    } else {
-      img.classList.remove("header-visible-section-two-image");
-      anime({
-        targets:
-          ".heading-section-two-1, .heading-section-two-2, .heading-section-two-3",
-        opacity: [1, 0],
-        duration: 8000,
-        delay: 500,
-        offset: 0
-      });
+      
+      
     }
   });
 }
