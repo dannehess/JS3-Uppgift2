@@ -95,26 +95,21 @@ var animateHeadersIn = anime({
 });
 
 animateHeadersIn.pause();
-
-function checkForVisibilityText() {
-  var text = document.querySelectorAll(".hide");
-  text.forEach(function(tx) {
-    if (isElementInViewport(tx)) {
-      tx.classList.add("show");
-      }
-
-  })};
+var hasAnimated = false;
 
 function checkForVisibilityImage() {
   var image = document.querySelectorAll(".header-section-two-image");
   image.forEach(function(img) {
     if (isElementInViewport(img)) {
       img.classList.add("header-visible-section-two-image");
-      if (animateHeadersIn.paused && !animateHeadersIn.completed)
-        animateHeadersIn.play();
+      if (hasAnimated == false) {
+
+      
+        hasAnimated = true;
+        animateHeadersIn.restart();
+        animateHeadersIn.play();}
     } else {
-      animateHeadersIn.play();
-      animateHeadersIn.pause();
+      hasAnimated = false;
       img.classList.remove("header-visible-section-two-image");
       anime({
         targets:
