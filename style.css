@@ -130,8 +130,62 @@ h4{
   .item{
       background-color: rgb(241, 239, 239);
   }
+ /* Pelles sektion */
+ 
+ .infosection {
+    max-width: 800px;   
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .text-wrapper {
+    margin: 1rem 1rem;
+    padding: 1px;
+    width: 100%;
+    max-width: 500px;   
+    position: sticky;
+    top: 1rem;
+    
+    
+  }
+  .infosection:first-child {
+    margin-top: 30vh;
+  }
+ 
+  .infocontainer{
+    background-image: url('https://img.freepik.com/free-photo/cement-wall-floor-copy-space_53876-30237.jpg?size=626&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  strong {
+    position: relative;
+    
+    
+    font-size: 1em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(70deg, #fff, #D4AF37, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 2.2s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
 
-
+  
+  /* PS END */
   /* MENY START */
 
   nav{
@@ -139,4 +193,6 @@ h4{
       background-color: #1a1a1d;
   }
 
+
+ 
   /* MENY END */
