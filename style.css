@@ -27,7 +27,7 @@ body, html{
 }
 
 .section-full>.item{
-    background-image: url('https://img.freepik.com/free-photo/cement-wall-floor-copy-space_53876-30237.jpg?size=626&ext=jpg');
+    background-image: url("img/top-section-bg.jpeg");
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -154,7 +154,7 @@ h4{
   }
  
   .infocontainer{
-    background-image: url('https://img.freepik.com/free-photo/cement-wall-floor-copy-space_53876-30237.jpg?size=626&ext=jpg');
+    background-image: url("img/top-section-bg.jpeg");
     background-size: cover;
     background-position: center;
     
